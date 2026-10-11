@@ -10,5 +10,5 @@
 		"skipLibCheck": true,
 		"target": "ESNext"
 	},
-	"include": ["src/**/*.js", "src/**/*.vue", "eslint.config.js", "stylelint.config.js", ".cz-config.js"]
+	"include": ["src/**/*.js", "src/**/*.vue", "eslint.config.js", "stylelint.config.js", ".cz-config.js", ".commitlintrc.js", "babel-plugin-import-meta-url.js"]
 }
