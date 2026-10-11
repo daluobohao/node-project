@@ -1,0 +1,73 @@
+{
+	"name": "node-esm",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"type": "module",
+	"scripts": {
+		"start": "NODE_OPTIONS='--import ./src/extensionless-resolve.js' nodemon -x babel-node src/index.js",
+		"demo": "vite --config src/vue-demo/vite.config.js",
+		"commit": "git-cz"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-customizable"
+		}
+	},
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-env",
+				{
+					"modules": false
+				}
+			]
+		],
+		"plugins": [
+			"./babel-plugin-import-meta-url.js"
+		]
+	},
+	"dependencies": {
+		"@yangzw/bruce-std": "^2.0.0",
+		"@yangzw/bruce-us": "1.0.3",
+		"postcss-html": "^2.0.0",
+		"postcss-less": "^6.0.0",
+		"postcss-scss": "^4.0.9",
+		"stylelint": "^17.16.0",
+		"stylelint-config-standard": "^40.0.0",
+		"stylelint-order": "^8.1.2"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.29.7",
+		"@babel/core": "^7.29.7",
+		"@babel/node": "^7.29.7",
+		"@babel/preset-env": "^7.29.7",
+		"@stylistic/stylelint-plugin": "^5.3.1",
+		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"@typescript-eslint/parser": "^6.21.0",
+		"@vitejs/plugin-vue": "^6.0.10",
+		"commitizen": "^4.3.2",
+		"cz-conventional-changelog": "^3.3.0",
+		"cz-customizable": "^7.5.4",
+		"eslint-config-standard-with-typescript": "^43.0.1",
+		"nodemon": "^3.1.14",
+		"typescript": "^6.0.3",
+		"vite": "^8.3.4",
+		"vue": "^3.5.43"
+	},
+	"nodemonConfig": {
+		"env": {
+			"NODE_ENV": "dev"
+		},
+		"execMap": {
+			"js": "node --harmony"
+		},
+		"ext": "js json",
+		"ignore": [
+			"dist/",
+			"src/vue-demo/"
+		],
+		"watch": [
+			"src/"
+		]
+	}
+}

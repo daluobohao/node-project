@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": false,
+		"esModuleInterop": true,
+		"jsx": "preserve",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"noEmit": true,
+		"skipLibCheck": true,
+		"target": "ESNext"
+	},
+	"include": ["src/**/*.js", "src/**/*.vue", "eslint.config.js", "stylelint.config.js", ".cz-config.js"]
+}

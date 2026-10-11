@@ -1,0 +1,29 @@
+{
+    // 默认自定义配置
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always",
+        "source.fixAll.stylelint": "always"
+    },
+    "eslint.format.enable": true,
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+    // 扩展自定义配置
+    "eslint.nodePath": "/Users/MY/code/node-project/node_modules/@yangzw/bruce-std/node_modules/eslint",
+    "eslint.options": {
+        "overrideConfigFile": "/Users/MY/code/node-project/eslint.config.js" // 可变❗
+    },
+    "eslint.useFlatConfig": true,
+    "stylelint.configBasedir": "/Users/MY/code/node-project",
+    "stylelint.configFile": "/Users/MY/code/node-project/stylelint.config.js",
+    "stylelint.customSyntax": "postcss-scss", // 可变❗
+    "stylelint.stylelintPath": "/Users/MY/code/node-project/node_modules/@yangzw/bruce-std/node_modules/stylelint",
+    "stylelint.validate": ["html", "css", "scss", "less", "vue"],
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.formatOnSave": true
+    },
+    "git.ignoreLimitWarning": true
+}
+    
